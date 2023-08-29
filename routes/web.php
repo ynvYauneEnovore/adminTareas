@@ -28,9 +28,14 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/inicio', function () {
+    return Inertia::render('Inicio');
+})->middleware(['auth', 'verified'])->name('inicio');
+
+Route::get('/tareas', function () {
+    return Inertia::render('Tareas');
+})->middleware(['auth', 'verified'])->name('tareas');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
