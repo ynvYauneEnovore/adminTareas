@@ -24,8 +24,20 @@ export default function Authenticated({ user, header, children }) {
                                 <NavLink href={route('inicio')} active={route().current('inicio')}>
                                     Inicio
                                 </NavLink>
+                                <NavLink href={route('calendario')} active={route().current('calendario')}>
+                                    Calendario
+                                </NavLink>
                                 <NavLink href={route('tareas')} active={route().current('tareas')}>
-                                    Estudio
+                                    Tareas
+                                </NavLink>
+                                <NavLink href={route('notas')} active={route().current('notas')}>
+                                    Notas   
+                                </NavLink>
+                                <NavLink href={route('proyectos')} active={route().current('proyectos')}>
+                                    Proyectos
+                                </NavLink>
+                                <NavLink href={route('configuracion')} active={route().current('configuracion')}>
+                                Configuración
                                 </NavLink>
                             </div>
                         </div>

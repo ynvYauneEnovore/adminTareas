@@ -20,7 +20,7 @@ export default function Dashboard({ auth }) {
 <div class="p-4">
     <div class="mb-4 text-center opacity-90">
         <a href="#" class="relative block">
-            <img alt="profil" src="https://gitlab.com/uploads/-/system/user/avatar/9242773/avatar.png?width=400" class="mx-auto object-cover rounded-full h-40 w-40 "/>
+            <img alt="profil" src="https://secure.gravatar.com/avatar/307f127a06b20c136e863f585a41f548?s=800&d=identicon" class="mx-auto object-cover rounded-full h-40 w-40 "/>
         </a>
     </div>
     <div class="text-center">

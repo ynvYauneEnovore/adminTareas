@@ -36,6 +36,27 @@ Route::get('/tareas', function () {
     return Inertia::render('Tareas');
 })->middleware(['auth', 'verified'])->name('tareas');
 
+Route::get('/calendario', function () {
+    return Inertia::render('Calendario');
+})->middleware(['auth', 'verified'])->name('calendario');
+
+Route::get('/tareas', function () {
+    return Inertia::render('Tareas');
+})->middleware(['auth', 'verified'])->name('tareas');
+
+Route::get('/notas', function () {
+    return Inertia::render('Notas');
+})->middleware(['auth', 'verified'])->name('notas');
+
+Route::get('/proyectos', function () {
+    return Inertia::render('Proyectos');
+})->middleware(['auth', 'verified'])->name('proyectos');
+
+Route::get('/configuracion', function () {
+    return Inertia::render('Configuracion');
+})->middleware(['auth', 'verified'])->name('configuracion');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
